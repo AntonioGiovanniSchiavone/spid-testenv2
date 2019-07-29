@@ -17,7 +17,7 @@ eight==0.4.2              # via signxml
 enum34==1.1.6             # via cryptography, signxml
 exrex==0.10.5
 faker==0.8.16
-flask-admin==1.5.1
+flask-admin==1.5.3
 flask-sqlalchemy==2.3.2
 flask==1.0.2
 future==0.16.0            # via eight

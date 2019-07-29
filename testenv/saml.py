@@ -243,9 +243,6 @@ def create_logout_response(data, response_status):
     # Setup issuer data
     issuer_attrs = data.get('issuer').get('attrs')
     issuer = Issuer(
-        attrib=dict(
-            NameQualifier=issuer_attrs.get('name_qualifier'),
-        ),
         text=data.get('issuer').get('text')
     )
     response.append(issuer)
@@ -413,9 +410,6 @@ def create_error_response(data, response_status):
     # Setup issuer data
     issuer_attrs = data.get('issuer').get('attrs')
     issuer = Issuer(
-        attrib=dict(
-            NameQualifier=issuer_attrs.get('name_qualifier'),
-        ),
         text=data.get('issuer').get('text')
     )
     response.append(issuer)
